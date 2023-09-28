@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 5px beige;
+
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+    margin: 0 0 0 auto;
+    font-size: 25px;
+    padding: 25px;
+}
+
+.company {
+    background-color: transparent;
+    color: greenyellow;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+}
+.company .img {
+    display: inline-block;
+    height: 80px;
+}
+.company p {
+    display: inline-block;
+    font-size: 40px;
+}
+.company p::first-letter{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.main {
+    display: flex;
+    word-spacing: normal;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 350px;
+    
+}
+
+.mimg {
+    background-color: transparent;
+    border-radius: 100%;
+    height: 35vw;
+}
+
+.txt {
+    margin: 0 50px;
+    width: 40vw;
+}
+
+.offer {
+    text-align: start;
+    justify-items: center;
+    background-color: greenyellow;
+    max-width: fit-content;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    max-height: 50px;
+}
+
+.large {
+    font-size: 100px;
+    max-width: 460px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.lorem {
+    max-width: 460px;
+    font-size: medium;
+    margin-bottom: revert;
+}
+
+#btn {
+    background-color: #FFC066;
+    padding: 5px 70px;
+    border: double burlywood;
+    font-size: 33px;
+    text-decoration: none;
+    color: darkred;
+    transition-property:background-color,scale ;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+#btn:hover{
+    scale: 2;
+    background-color: #eaa18b;
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 200px;
+}
+
+.voucher,
+.fresh,
+.delivery {
+    display: contents;
+    transition: scale 0.5s ease-in-out;
+
+    i {
+        font-size: 80px;
+    }
+}
+.voucher:hover,.fresh:hover,.delivery:hover{
+    scale: 1.10;
+  h4{
+    color: #eaa18b;
+  }
+}
+
+ 
+    .tx h4 {
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: revert;
+        padding-bottom: 10px;
+    }
+
+    .tx p {
+        font-size: 18px;
+        word-break: break-word;
+    }
+
+
+.menutxt {
+    text-align: center;
+    margin: 50px;
+
+    h4 {
+        font-size: 70px;
+        color: darkgreen;
+    }
+}
+    .menubtn {
+        margin-bottom: 15px;
+        padding: 10px 100px;
+        font-size: 25px;
+        border: none;
+        background-color: darkseagreen;
+        color: darkgreen;
+        transition: scale 0.5s ease-in-out;
+    }
+    .menubtn:hover {
+        scale: 1.10;
+        background-color: #9cd180;
+      }
+
+
+.image {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 60%;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 'i1 i1 i2 i4' 'i1 i1 i2 i7' 'i3 i5 i6 i7';
+    margin: 0 auto;
+}
+#item1,#item2,#item3,#item4,#item5,#item6,#item7{
+    transition: scale 0.5s ease-in-out;
+
+}
+#item1:hover,#item2:hover,
+#item3:hover,#item4:hover,
+#item5:hover,#item6:hover,
+    #item7:hover{
+    scale: 1.01;
+}
+
+#item1 {
+    grid-area: i1;
+
+}
+
+#item2 {
+    grid-area: i2;
+}
+
+#item3 {
+    grid-area: i3;
+  
+}
+
+#item4 {
+    grid-area: i4;
+
+}
+
+#item5 {
+    grid-area: i5;
+
+}
+
+#item6 {
+    grid-area: i6;
+
+}
+
+#item7 {
+    grid-area: i7;
+
+}
+.footer{
+    display: flex;
+    background-color: #bdb19b;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 100px 0 0 0;
+}
+.mainlink {
+    color: #ece8dd;
+}
+.mainlink p,.mainlink #icon i{
+    transition: scale 0.5s ease-in-out;
+}
+.mainlink p:hover,.mainlink #icon i:hover {
+    color: #4c9361;
+    font-weight: 600;
+  }
+  .bold {
+    font-size: 21px;
+    padding: 0 0 15px;
+    color: #fdf3dc;
+}
+input {
+      padding: 5px 20px 5px 5px;
+    margin: 0 0 10px 0;
+    opacity: 2;
+  }
+  span i{
+      margin: 5px 5px 0 0;
+  }
+  @media only screen and  ( max-width: 1500px ) {
+  
+      .company p {
+          font-size: 5vw;
+        }
+        .company p::first-letter{
+            font-size: 8vw;
+        }
+       .company .img{
+        height: 7vh;
+        }
+    .main{
+        margin: 3vh 55vw;
+    }
+    .mimg{
+        
+        height: 40vw;
+    }
+    .txt{
+        margin-left: 2vw;
+    }
+    .offer{
+        font-size: 1.5vh;
+        padding: 1vw ;
+    }
+.large{
+        font-size: 5vw;
+}
+.lorem{
+    font-size: 2vw;
+    width: 35vw;
+}
+#btn{
+    padding: 0.5vh 6vw;
+    font-size: 2vw;
+}
+.menutxt {
+    text-align: center;
+    margin: 3vw;
+
+    .menubtn {
+ 
+        padding: 1vh 10vw;
+        font-size: 3vh;
+       
+    }
+    h4 {
+        font-size: 7vh;
+
+    }
+}
+
+#bottom {
+    margin: 5vh 5vw;
+}
+
+.voucher,
+.fresh,
+.delivery {
+    display: block;
+    i {
+        font-size: 8vw;
+        padding: 1vw;
+    }
+}
+ 
+    .tx h4 {
+        font-size: 2.5vw;
+    }
+
+    .tx p {
+        font-size: 2vw;
+    }
+
+
+.image{
+    justify-content: center;
+    grid-template-areas:
+"i1" 
+"i2" 
+"i3" 
+"i4" 
+"i5" 
+"i6" 
+"i7";
+}
+
+
+.lgtxt {
+    font-size: 4vh;
+}
+#item1,#item2 ,#item3 ,#item4, #item5, #item6 ,#item7 {
+width: 70vw;
+}
+.footer{
+display: block;
+padding: 8vw;
+}
+
+  }
